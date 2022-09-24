@@ -1,3 +1,4 @@
+
 //Author: minstradamuss
 
 public class Sum {
