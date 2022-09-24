@@ -1,3 +1,5 @@
+//Author: minstradamuss
+
 public class Sum {
     public static void main(String[] args) {
         int summa = 0;
