@@ -1,5 +1,7 @@
 # ITMO-university
-My strange adventures in ITMO university
+My strange adventures in ITMO university.
+
+Trying to stay alive in CT M3135
 
 
 Various interesting things will appear here periodically, in most cases it will be some interesting tasks
