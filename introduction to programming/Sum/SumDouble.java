@@ -1,3 +1,6 @@
+
+//Author: minstradamuss
+
 public class SumDouble {
     public static void main(String[] args) {
         double summa = 0;
