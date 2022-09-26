@@ -1,0 +1,235 @@
+\documentclass{homework}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\parindent 0pt
+\parskip 8pt
+
+\title{M3135 HW1 Лоскутова Мария}
+
+\begin{document}
+\maketitle
+
+\section{}
+\label{sec:1}
+ \begin{gather*}  
+	1) \
+        f_1(n) = \mathcal{O}(g_1(n)) \, \Rightarrow \, f_1(n) \, \leq \, c_1 * g_1(n)
+	\end{gather*}
+ \begin{gather*}  
+	2) \
+        f_2(n) = \mathcal{O}(g_2(n)) \, \Rightarrow \, f_2(n) \, \leq \, c_2 * g_2(n)
+	\end{gather*}
+ \begin{gather*}  
+	3) \
+        c_3 = max(c_1, c_2)
+	\end{gather*}
+\begin{gather*}  
+        f_1(n) + f_2(n) \, \leq \, c_3 * g_1(n) + c_3 * g_2(n) \, \Rightarrow \,
+        f_1(n) + f_2(n) \, \leq \, c_3 * (g_1(n) + g_2(n)) = \mathcal{O}(g_1(n) + g_2(n))
+        \text{ - Q.E.D.}
+	\end{gather*}
+
+\section{} 
+\label{sec:2}
+\begin{gather*}
+	max(f(n), g(n)) = \Theta(f(n) + g(n))
+	\\
+	\Updownarrow
+	\\
+	\begin{cases}
+		max(f(n), g(n)) = \mathcal{O}(f(n) + g(n))
+		\\
+		max(f(n), g(n)) = \Omega(f(n) + g(n))
+	\end{cases}
+	\end{gather*}
+1) \ 1. Рассмотрим первую часть системы:
+	\begin{gather*}
+        max(f(n), g(n)) = \mathcal{O}(f(n) + g(n)) \, \Rightarrow \, max(f(n), g(n)) \, \leq \, c1 * (f(n) + g(n)) \
+        \end{gather*}  
+        2. \
+        пусть 
+        \begin{gather*}
+        N_0 = 1, c_1 = 1
+        \end{gather*}
+        тогда,
+        \begin{gather*}
+        max(f(n), g(n)) \, \leq \, f(n) + g(n)
+        \end{gather*}
+Докажем это неравенство. Рассмотрим произвольное 
+\begin{gather*}
+        N^{\prime} > n_0 \
+        \end{gather*}
+Педположим, что
+\begin{gather*}
+        f(N^{\prime}) \, \geq \, g(N^{\prime}) \
+        \end{gather*}
+тогда,
+\begin{gather*}
+        max(f(N^{\prime}), g(N^{\prime})) \, = \, f(N^{\prime}) \, \Rightarrow \, f(N^{\prime}) \, \leq \, f(N^{\prime}) + g(N^{\prime}) \text{ - верно,}
+        \end{gather*}
+иначе аналогично.
+\
+
+
+2) \ 1. Рассмотрим вторую часть системы:
+	\begin{gather*}
+        max(f(n), g(n)) = \Omega(f(n) + g(n)) \, \Rightarrow \, max(f(n), g(n)) \, \geq \, c_2 * (f(n) + g(n)) \
+        \end{gather*}  
+        2. \
+        пусть 
+        \begin{gather*}
+        N_0 = 1, c_2 = 0.5
+        \end{gather*}
+        тогда,
+        \begin{gather*}
+        max(f(n), g(n)) \, \geq \, 0.5 * f(n) + 0.5 * g(n)
+        \end{gather*}
+
+Докажем это неравенство. Рассмотрим произвольное 
+\begin{gather*}
+        N^{\prime} > n_0 \
+        \end{gather*}
+Педположим, что
+\begin{gather*}
+        f(N^{\prime}) \, \geq \, g(N^{\prime}) \
+        \end{gather*}
+тогда,
+\begin{gather*}
+        max(f(N^{\prime}), g(N^{\prime})) \, = \, f(N^{\prime}) \, \Rightarrow \, f(N^{\prime}) \, \geq \, 0.5 * f(N^{\prime}) + 0.5 * g(N^{\prime}) \text{ - верно,}
+        \end{gather*}
+иначе аналогично.
+
+\section{} 
+\label{sec:3}
+ \begin{gather*}
+		\displaystyle\sum_{i = 1}^{n+5} 2^i = \mathcal{O}(2^n)
+		\end{gather*}
+1) Используем формулу суммы геометрической прогрессии:  
+  \begin{gather*}  
+        S = \frac{b_1*(q^{n+1})}{q - 1}
+	\end{gather*}
+ Таким образом,
+ \begin{gather*}  
+        S = \frac{2*(2^{n+6})}{1} = 2^{n+7} - 2 = 128 * 2 ^ n - 2 = \mathcal{O}(2^n) \text{ - Q.E.D.}
+	\end{gather*}
+  
+
+\section{} 
+\label{sec:4}
+	\begin{gather*}
+		\frac{n^3}{6} - 7n^2 = \Omega(n^3)
+		\\
+		\Updownarrow
+		\\
+		\exists \, c>0,\, \exists N>0,\: \forall n > N:\: \frac{n^3}{6} - 7n^2 \geq c\cdot n^3
+		\end{gather*}
+Пусть:
+		\begin{gather*}
+		c = \frac{1}{12},\: N = 84
+		\end{gather*}
+Тогда, 
+            \begin{gather*}
+		\frac{n^3}{6} - 7n^2 \geq \frac{1}{12}\cdot n^3  \, \Rightarrow \,
+		n^3 - 84n^2 \geq 0
+		 \, \Rightarrow \,
+		n - 84 \geq 0 
+		 \, \Rightarrow \,
+		n \geq 84\text{ - верно.}
+	\end{gather*}
+
+
+
+\section{}
+\label{sec:5}
+	\begin{gather*}
+		1
+		\text{\hyperref[p1]{\vphantom{|}$\longrightarrow$}}
+		\,
+		\left(\frac{3}{2}\right)^2
+		\,
+		\text{\hyperref[p2]{\vphantom{|}$\longrightarrow$}}
+		\,
+		n^{\frac{1}{\log n}}
+		\,
+		\text{\hyperref[p3]{\vphantom{|}$\longrightarrow$}}
+		\,
+		\log\log n
+		\,
+		\text{\hyperref[p4]{\vphantom{|}$\longrightarrow$}}
+		\,
+		\sqrt{\log n}
+		\,
+		\text{\hyperref[p5]{\vphantom{|}$\longrightarrow$}}
+		\,
+		\log^2n
+		\,
+		\text{\hyperref[p6]{\vphantom{|}$\longrightarrow$}}
+		\,
+		(\sqrt 2)^{\log n}
+		\,
+		\text{\hyperref[p7]{\vphantom{|}$\longrightarrow$}}
+		\,
+		2^{\log n}
+		\,
+		\text{\hyperref[p8]{\vphantom{|}$\longrightarrow$}}
+		\,
+		n
+		\,
+		\text{\hyperref[p9]{\vphantom{|}$\longrightarrow$}}
+		\,
+		n\log n
+		\,
+		\text{\hyperref[p10]{\vphantom{|}$\longrightarrow$}}
+		\,
+		\log n!
+		\,
+		\text{\hyperref[p11]{\vphantom{|}$\longrightarrow$}}
+		\\
+		n^2
+		\,
+		\text{\hyperref[p12]{\vphantom{|}$\longrightarrow$}}
+		\,
+		4^{\log n}
+		\,
+		\text{\hyperref[p13]{\vphantom{|}$\longrightarrow$}}
+		\,
+		n^3
+		\,
+		\text{\hyperref[p14]{\vphantom{|}$\longrightarrow$}}
+		\,
+		\left(\log n\right)!
+		\,
+		\text{\hyperref[p15]{\vphantom{|}$\longrightarrow$}}
+		\,
+		\left(\log n\right)^{\log n}
+		\,
+		\text{\hyperref[p16]{\vphantom{|}$\longrightarrow$}}
+		\,
+		n^{\log\log n}
+		\,
+		\text{\hyperref[p17]{\vphantom{|}$\longrightarrow$}}
+		\,
+		n\cdot 2^n
+		\,
+		\text{\hyperref[p18]{\vphantom{|}$\longrightarrow$}}
+		\,
+		e^n
+		\,
+		\text{\hyperref[p19]{\vphantom{|}$\longrightarrow$}}
+		\,
+		n!
+		\,
+		\text{\hyperref[p20]{\vphantom{|}$\longrightarrow$}}
+		\,
+		\left(n+1\right)!
+		\,
+		\text{\hyperref[p21]{\vphantom{|}$\longrightarrow$}}
+		\,
+		2^{2^n}
+		\,
+		\text{\hyperref[p22]{\vphantom{|}$\longrightarrow$}}
+		\,
+		2^{2^{n+1}}
+	\end{gather*}
+\end{document}
