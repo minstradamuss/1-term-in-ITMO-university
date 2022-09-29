@@ -1,3 +1,6 @@
+
+//Author: minstradamuss
+
 import java.util.*;
 
 public class Reverse {
