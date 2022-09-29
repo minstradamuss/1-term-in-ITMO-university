@@ -1,3 +1,6 @@
+
+//Author: minstradamuss
+
 import java.util.*;
 public class ReverseTranspose {
     public static void main(String[] args) {
