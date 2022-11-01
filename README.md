@@ -1,5 +1,5 @@
 # ITMO-university
-My amazing, filled with dangers in the form of Gosha, and joys in the form of Discrete Mathematics, adventures in ITMO university.
+My amazing, filled with dangers in the form of Gosha and and Vedernikov, and joys in the form of Discrete Mathematics, adventures in ITMO university.
 
 Trying to stay alive in CT M3135
 
