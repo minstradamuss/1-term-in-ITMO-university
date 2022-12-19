@@ -1,6 +1,6 @@
 #########################
 # author: minstradamuss #
-#   Loskutova Mariia     #
+#   Loskutova Mariia    #
 #########################
 
 import matplotlib.pyplot as plt
