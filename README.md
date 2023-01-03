@@ -4,5 +4,3 @@ Cool students but poor teaching (especially discrete mathematics and algorithms)
 I advise you to think before coming here, because most of the reviews on the Internet turned out to be true. 
 PR is more important than the quality of education here.
 
-Tasks in M3135
-
