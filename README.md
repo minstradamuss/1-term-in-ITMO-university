@@ -1,2 +1,3 @@
 # 1 term in ITMO-university
-Working days or how I do almost nothing in M3135. 
+Doing shit or almost doing nothing in M3135.
+Or just my working days.
