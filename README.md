@@ -15,4 +15,7 @@ A brief tour of the subjects:
 
 Also, this fact: if you cheated, or your programs accidentally matched, such as 2 numbers are given at the input, you need to withdraw their sum, then ... Stankevich will place you in the legendary "red folder" that no one has seen and check its existence no possibility. If you get into this folder, then the whole CT hat will fly at you, because. here all the toxics are ready to snitch on each other, they will also promise you that if you need something from the pulpit, you will not get it and all that nonsense. In fact, in principle, there is no possibility to contact the department, because there are no departments here, and there is some kind of structure that no one understands.
 They will also promise you that if you want to transfer, then they will write to you in a personal file and recommendation that you wrote off. As a result, in fact, no recommendations are required anywhere. This is only the elevation of the teacher's own importance - this is bad.
-As a result, if you want to study calmly and immediately find a job after training, DO NOT go to ITMO.
+
+As a result, if you want a normal life, a quality education, if you want teachers to answer your questions in a chat, and not write: "Your question has been ignored", then DO NOT go to ITMO, go to some classical university.
+
+Good luck!
