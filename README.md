@@ -5,7 +5,7 @@ Or just my working days.
 
 A brief tour of the subjects:
 1. Mathematical analysis - ;
-2. Linear - ;
+2. Linear algebra - ;
 3. Discrete mathematics - cancellation of lectures (instead of them they offered to look at the records on YouTube of other years) is very bad, incomprehensible and inadequate assessment (the system of basic and bonus points is the nonsense of the teacher);
 4. Algorithms and data structures are the best and favorite subject - useful, interesting, only thanks to this course I passed the first interview in my life;
 5. Computer architecture - perhaps this course is needed for general development, but to score with a Verilog your free time... in general, if you want to become a sysadmin, you do not need to spend 4 years of study at ITMO;
