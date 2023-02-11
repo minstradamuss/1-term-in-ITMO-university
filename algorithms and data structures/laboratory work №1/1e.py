@@ -1,3 +1,6 @@
+
+#Author: minstradamuss
+
 def find_smaller(a, x):
     # find amount a[i] <= x
     left = -1
