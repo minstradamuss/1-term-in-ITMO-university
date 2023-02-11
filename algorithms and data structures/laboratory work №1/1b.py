@@ -1,3 +1,6 @@
+
+#Author: minstradamuss
+
 def kps(a, l, r, k):
     x = a[(l + r) // 2]
     i, j = l, r
