@@ -1,6 +1,3 @@
-
-#Author: minstradamuss
-
 def get_max(heap, size_barrel):
     ans = heap[0]
     if heap[0] > size_barrel:
