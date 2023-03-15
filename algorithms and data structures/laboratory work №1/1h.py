@@ -1,6 +1,3 @@
-
-#Author: minstradamuss
-
 n, m, k = map(int, input().split())
 seq = []
 for _ in range(n):
